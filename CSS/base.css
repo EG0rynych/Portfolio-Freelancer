@@ -18,18 +18,17 @@
    --project-card-bg: var(--white);
    --project-card-text: var(--black);
    --box-shadow: 0px 5px 35px rgba(0, 0, 0, 0.25);
-
 }
 .dark {
    /* Темная тема */
-  --page-bg: #252526;
-  --text-color: var(--white);
+   --page-bg: #252526;
+   --text-color: var(--white);
+   --blackpure: #fff;
+   --title-1: var(--white);
 
-  --title-1: var(--white);
-
-  --project-card-bg: var(--black);
-  --project-card-text: var(--white);
-  --box-shadow: 0px 5px 35px rgba(0, 0, 0, 0.8);
+   --project-card-bg: var(--black);
+   --project-card-text: var(--white);
+   --box-shadow: 0px 5px 35px rgba(0, 0, 0, 0.8);
 }
 html,body {
    font-family:"DM Sans", sans-serif;

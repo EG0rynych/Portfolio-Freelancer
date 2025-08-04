@@ -1,89 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Портфолио Фрилансера</title>
    <base href="/Portfolio1/">
    <link rel="stylesheet" type="text/css" href="./css/style.css">
+   <script src="./JS/fetch.js" defer></script>
 </head>
+
 <body>
    <nav class="nav">
       <div class="container">
-          <div class="nav-row">
-              <a href="./index.html" class="logo"><strong>Freelancer</strong> portfolio</a>
-              <button class="dark-mode-btn" type="button">
-                  <img src="./img/icons/sun.svg" alt="Light mode" class="dark-mode-btn__icon">
-                  <img src="./img/icons/moon.svg" alt="Dark mode" class="dark-mode-btn__icon">
-              </button>
-              <ul class="nav-list">
-                  <li class="nav-list__item"><a href="./project.html" class="nav-list__link nav-list__link--active">Projects</a></li>
-                  <li class="nav-list__item"><a href="./skills.html" class="nav-list__link">Skills</a></li>
-                  <li class="nav-list__item"><a href="./contacts.html" class="nav-list__link">Contacts</a></li>
-              </ul>
-          </div>
+         <div class="nav-row">
+            <a href="./index.html" class="logo"><strong>Freelancer</strong> portfolio</a>
+            <button class="dark-mode-btn" type="button">
+               <img src="./img/icons/sun.svg" alt="Light mode" class="dark-mode-btn__icon">
+               <img src="./img/icons/moon.svg" alt="Dark mode" class="dark-mode-btn__icon">
+            </button>
+            <ul class="nav-list">
+               <li class="nav-list__item"><a href="../Portfolio1/index.html" class="nav-list__link">Projects</a></li>
+               <li class="nav-list__item"><a href="#" data-page="skills.html" class="nav-list__link">Skills</a></li>
+               <li class="nav-list__item"><a href="#" data-page="contacts.html" class="nav-list__link">Contacts</a></li>
+            </ul>
+         </div>
       </div>
-  </nav>
+   </nav>
+   <div id="main">
+      <header class="header">
+         <div class="header__wrap">
+            <h1 class="header__title"><strong>Hi, my name is <em>Matvey</em></strong>
+               </br>frontend developer</h1>
+            <div class="header__text">
+               <p>with passion for learning and creating.</p>
+            </div>
+            <a href="#" class="btn">Download CV</a>
+         </div>
+      </header>
 
-  <header class="header">
-      <div class="header__wrap">
-         <h1 class="header__title"><strong>Hi, my name is <em>Matvey</em></strong>
-         </br>frontend developer</h1>
-         <div class="header__text"><p>with passion for learning and creating.</p></div>
-         <a href="#" class="btn">Download CV</a>
-      </div>
-  </header>
-
-  <main class="section">
-   <div class="container">
-      <h2 class="title-1">Projects</h2>
-      <ul class="project__lists">
-         <a href="project.html">
-            <li class="project">
-               <img src="./img/projects/01.jpg" alt="Gaming streaming portal - проекты созданые автором сайта." class="project__img">
-               <h3 class="project__title">Gaming streaming portal</h3>
-            </li>
-         </a>
-         <li class="project">
-            <img src="./img/projects/02.jpg" alt="Video service - проекты созданые автором сайта." class="project__img">
-            <h3 class="project__title">Video service</h3>
-         </li>
-         <li class="project">
-            <img src="./img/projects/03.jpg" alt="Video portal - проекты созданые автором сайта." class="project__img">
-            <h3 class="project__title">Video portal</h3>
-         </li>
-         <li class="project">
-            <img src="./img/projects/04.jpg" alt="Dating app - проекты созданые автором сайта." class="project__img">
-            <h3 class="project__title">Dating app</h3>
-         </li>
-         <li class="project">
-            <img src="./img/projects/05.jpg" alt="Landing - проекты созданые автором сайта." class="project__img">
-            <h3 class="project__title">Landing</h3>
-         </li>
-         <li class="project">
-            <img src="./img/projects/06.jpg" alt="Gaming community - проекты созданые автором сайта." class="project__img">
-            <h3 class="project__title">Gaming community</h3>
-         </li>
-      </ul>
+      <main class="section">
+         <div class="container">
+            <h2 class="title-1">Projects</h2>
+            <ul class="project__lists">
+               <li class="project" data-page="gaming-portal.html">
+                  <a href="./HTML/gaming-portal.html">
+                     <img src="./img/projects/01.jpg" alt="Gaming streaming portal - проекты созданые автором сайта."
+                        class="project__img">
+                     <h3 class="project__title">Gaming streaming portal</h3>
+                  </a>
+               </li>
+               <li class="project" data-page="VideoService.html">
+                  <a href="./HTML/video-service.html">
+                     <img src="./img/projects/02.jpg" alt="Video service - проекты созданые автором сайта."
+                        class="project__img">
+                     <h3 class="project__title">Video service</h3>
+                  </a>
+               </li>
+               <li class="project" data-page="VideoPortal.html">
+                  <a href="./HTML/video-portal.html">
+                     <img src="./img/projects/03.jpg" alt="Video portal - проекты созданые автором сайта."
+                        class="project__img">
+                     <h3 class="project__title">Video portal</h3>
+                  </a>
+               </li>
+               <li class="project" data-page="DatingApp.html">
+                  <a href="./HTML/dating-app.html">
+                     <img src="./img/projects/04.jpg" alt="Dating app - проекты созданые автором сайта."
+                        class="project__img">
+                     <h3 class="project__title">Dating app</h3>
+                  </a>
+               </li>
+               <li class="project" data-page="Landing.html">
+                  <a href="./HTML/landing.html">
+                     <img src="./img/projects/05.jpg" alt="Landing - проекты созданые автором сайта."
+                        class="project__img">
+                     <h3 class="project__title">Landing</h3>
+                  </a>
+               </li>
+               <li class="project" data-page="GamingCommunity.html">
+                  <a href="./HTML/gaming-community.html">
+                     <img src="./img/projects/06.jpg" alt="Gaming community - проекты созданые автором сайта."
+                        class="project__img">
+                     <h3 class="project__title">Gaming community</h3>
+                  </a>
+               </li>
+            </ul>
+         </div>
+      </main>
    </div>
-  </main>
 
    <footer class="footer">
       <div class="container">
          <div class="footer__container">
             <ul class="social" aria-label="Социальные сети">
                <li class="social__item"><a href="#"><img src="./img/icons/vk.svg" alt="Значок ВК"></a></li>
-               <li class="social__item"><a href="#"><img src="./img/icons/instagram.svg" alt="Значок Инстаграмма"></a></li>
+               <li class="social__item"><a href="#"><img src="./img/icons/instagram.svg" alt="Значок Инстаграмма"></a>
+               </li>
                <li class="social__item"><a href="#"><img src="./img/icons/twitter.svg" alt="Значок Твитер"></a></li>
                <li class="social__item"><a href="#"><img src="./img/icons/gitHub.svg" alt="Значок ГитХаб"></a></li>
                <li class="social__item"><a href="#"><img src="./img/icons/linkedIn.svg" alt="Значок ЛинкИди"></a></li>
             </ul>
             <div class="copyright">
                <p>© 2022 frontend-dev.com</p>
-           </div>
+            </div>
          </div>
       </div>
    </footer>
    <script src="./JS/script.js"></script>
 </body>
+
 </html>

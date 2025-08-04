@@ -2,11 +2,12 @@
 /* 1. Базовые и утилитарные стили */
 @import url(./base.css);
 /* 2. Компоненты (общие блоки) */
-@import url(./header.css);
 @import url(./navigathion.css);
-@import url(./footer.css);
+@import url(./header.css);
 @import url(./projects-block.css);
+@import url(./project.css);
 @import url(./skills.css);
+@import url(./footer.css);
 /* 3. Темы и адаптивность */
 @import url(./darkMode.css);
 @import url(./mediapoint.css);
@@ -17,43 +18,3 @@
 /* font-family: "DM Sans", sans-serif; */
 
 /* Страничка проeкта */
-.project__details {
-   margin: 0 auto;
-   max-width: 865px;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-}
-.project__details-img {
-   max-width: 100%;
-   margin-bottom: 40px;
-   border-radius: 10px;
-   box-shadow: var(--box-shadow);
-}
-.project__details-text {
-   margin-bottom: 30px;
-   font-family: var(--sans);
-   font-weight: 700;
-   font-size: 24px;
-   line-height: 130%;
-   letter-spacing: -0.5px;
-}
-.btn-outline {
-   padding: 12px 20px;
-   border-radius: 5px;
-   border: 1px solid var(--blackpure);
-   color: var(--blackpure);
-   font-family: var(--sans);
-   font-weight: 500;
-   font-size: 16px;
-   line-height: 24px;
-   letter-spacing: 0.15px;
-   text-align: center;
-   transition: 0.4s ease;
-}
-.btn-outline img {
-   padding-right: 5px;
-}
-.btn-outline:hover {
-   background-color: #3e424746;
-}
